@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------- Base polish -------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 12s linear infinite;
+}
+
+
+/* -------- Reusable helpers -------- */
+@layer components {
+  .surface {
+    @apply rounded-2xl bg-white/80 backdrop-blur border border-white/60 shadow-soft;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+  .hero-surface {
+    /* Default premium travel image (remote). Replace with local below if you want. */
+    background-image:
+      radial-gradient(80% 100% at 20% 10%, rgba(47, 127, 255, 0.45), transparent 60%),
+      linear-gradient(180deg, rgba(17, 22, 40, 0.30), rgba(17, 22, 40, 0.85)),
+      url("/images/lake.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /*
+    If you want LOCAL hero image:
+    1) add file: public/images/hero.jpg
+    2) replace the url(...) above with: url("/images/hero.jpg")
+  */
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}

@@ -1,0 +1,11 @@
+{"level":"error","message":"Error: listen EADDRINUSE: address already in use :::8080\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at Function.listen (/Users/mohammadarsh/Desktop/heena-tours-travel/backend/node_modules/express/lib/application.js:635:24)\n    at start (/Users/mohammadarsh/Desktop/heena-tours-travel/backend/server.js:287:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2026-02-01T08:11:17.549Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'uploads/1770555055140.jpeg'","timestamp":"2026-02-08T12:50:55.151Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'uploads/1770555065618.jpeg'","timestamp":"2026-02-08T12:51:05.619Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'uploads/1770555096167.jpeg'","timestamp":"2026-02-08T12:51:36.174Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open 'uploads/1770555463805.JPG'","timestamp":"2026-02-08T12:57:43.815Z"}
+{"level":"error","message":"Unexpected field","timestamp":"2026-02-10T18:54:14.147Z"}
+{"level":"error","message":"querySrv ENOTFOUND _mongodb._tcp.cluster0.xxxxx.mongodb.net","timestamp":"2026-02-19T00:36:45.819Z"}
+{"level":"error","message":"bad auth : Authentication failed.","timestamp":"2026-02-19T00:38:10.071Z"}
+{"level":"error","message":"querySrv ETIMEOUT _mongodb._tcp.cluster0.ol4imjc.mongodb.net","timestamp":"2026-02-26T03:41:52.959Z"}
+{"level":"error","message":"querySrv ENOTFOUND _mongodb._tcp.cluster0.ol4imjc.mongodb.net","timestamp":"2026-04-16T08:18:10.469Z"}
+{"level":"error","message":"querySrv ENOTFOUND _mongodb._tcp.cluster0.ol4imjc.mongodb.net","timestamp":"2026-04-16T08:31:22.295Z"}
