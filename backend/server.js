@@ -170,7 +170,7 @@ app.get("/health", (req, res) => res.json({ ok: true }));
    ERROR HANDLER
 =========================== */
 app.use((err, req, res, next) => {
-  const msg = err?.message || "Server error";
+  const msg = err && err.message ? err.message : "Server error";
   logger.error(msg);
 
   // Better status for CORS/RateLimit errors
