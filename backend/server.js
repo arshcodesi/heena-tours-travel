@@ -51,6 +51,9 @@ const allowedOrigins = [
   // ✅ Production
   "https://hinatours.com",
   "https://www.hinatours.com",
+
+  "https://heena-tours-travel.vercel.app",
+  "https://heena-tours-travel-a5zcu9vn7-arshcodesis-projects.vercel.app",
 ];
 
 app.use(
