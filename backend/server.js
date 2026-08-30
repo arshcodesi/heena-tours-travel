@@ -63,8 +63,12 @@ app.use(
       // allow server-to-server / Postman
       if (!origin) return cb(null, true);
 
-      if (allowedOrigins.includes(origin)) return cb(null, true);
-
+      if (
+        allowedOrigins.includes(origin) ||
+        origin.endsWith("-arshcodesis-projects.vercel.app")
+    ) {
+        return cb(null, true);
+    }
       // allow preview subdomains if needed (optional)
       // if (origin.endsWith(".hinatours.com")) return cb(null, true);
 
