@@ -54,6 +54,7 @@ const allowedOrigins = [
 
   "https://heena-tours-travel.vercel.app",
   "https://heena-tours-travel-a5zcu9vn7-arshcodesis-projects.vercel.app",
+  "https://heena-tours-travel-2qqw9bh62-arshcodesis-projects.vercel.app",
 ];
 
 app.use(
